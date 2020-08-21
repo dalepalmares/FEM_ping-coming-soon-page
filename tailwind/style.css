@@ -1,0 +1,41 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.input,
+.button {
+  width: 18rem;
+  max-width: 100%;
+  height: 2.5rem;
+}
+
+.button {
+  box-shadow: 0 5px 10px 0 hsl(223, 100%, 88%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 44rem;
+  }
+
+  .input,
+  .button {
+    height: 2.9rem;
+  }
+
+  .input {
+    width: 28rem;
+  }
+
+  .button {
+    width: 11rem;
+  }
+
+  #errorMsg {
+    bottom: -2.5rem;
+    left: 2rem;
+    font-size: 13px;
+  }
+}
